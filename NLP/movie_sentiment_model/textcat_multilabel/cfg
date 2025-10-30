@@ -1,0 +1,7 @@
+{
+  "labels":[
+    "POSITIVE",
+    "NEGATIVE"
+  ],
+  "threshold":0.5
+}
