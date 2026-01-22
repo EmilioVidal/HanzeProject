@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Size Measurement Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Object Size Measurement</h1>
+            <p class="subtitle">Upload an image to measure multiple objects</p>
+        </header>
+
+        <main>
+            <div class="upload-section" id="uploadSection">
+                <div class="upload-box" id="uploadBox">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <h3>Drop your image here</h3>
+                    <p>or click to browse</p>
+                    <input type="file" id="fileInput" accept="image/*">
+                </div>
+            </div>
+
+            <div class="preview-section" id="previewSection" style="display: none;">
+                <h2>Preview</h2>
+                <img id="previewImage" alt="Preview">
+                <button id="processBtn" class="btn-primary">Measure Objects</button>
+                <button id="cancelBtn" class="btn-secondary">Cancel</button>
+            </div>
+
+            <div class="loading-section" id="loadingSection" style="display: none;">
+                <div class="spinner"></div>
+                <p>Processing your image...</p>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <h2>Measurement Results</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-value" id="objectCount">0</span>
+                        <span class="stat-label">Objects Detected</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="totalArea">0</span>
+                        <span class="stat-label">Total Area (px²)</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="avgArea">0</span>
+                        <span class="stat-label">Average Area (px²)</span>
+                    </div>
+                </div>
+
+                <div class="result-image-container">
+                    <img id="resultImage" alt="Result">
+                </div>
+
+                <div id="objectList" class="object-list"></div>
+
+                <button id="uploadAnotherBtn" class="btn-primary">Upload Another Image</button>
+            </div>
+
+            <div class="error-section" id="errorSection" style="display: none;">
+                <div class="error-message">
+                    <strong>Error</strong>
+                    <p id="errorText"></p>
+                </div>
+                <button id="tryAgainBtn" class="btn-secondary">Try Again</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with OpenCV & Flask | Emilio Vidal</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ChromaDB (can be regenerated)
+chroma_db/
+
+# Uploaded/Generated files
+uploads/
+results/
+*.deleteme
+
+# Result images in root (test outputs)
+multiple_objects_result.jpg
+single_object_result.jpg
+
+# ComputerVision - Ignore course learning modules (large files)
+ComputerVision/00_installation/
+ComputerVision/01_Getting_Started_with_Images/
+ComputerVision/02_Basic_Image_Manipulation/
+ComputerVision/03_Image_Annotation/
+ComputerVision/04_Image_Enhancement/
+ComputerVision/05_Accessing_the_Camera/
+ComputerVision/06_Video_Writing/
+ComputerVision/07_Image_Filtering_Edge_Detection/
+ComputerVision/08_Image_Fetaures_and_Alignment/
+ComputerVision/09_Panorama/
+ComputerVision/10_HDR/
+ComputerVision/11_Object_Tracking/
+ComputerVision/12_Face_Detection/
+ComputerVision/13_Object_Detection/
+ComputerVision/14_Pose_Estimation_using_Openpose/
+
+# ComputerVision - Keep these (your project work)
+ComputerVision/multiple_objects_result*.jpg
+ComputerVision/multiple_objects_result*.png
+ComputerVision/__pycache__/
+ComputerVision/web pageAI/uploads/
+ComputerVision/web pageAI/results/
+ComputerVision/web pageAI/__pycache__/
+
+# Generative AI
+Generative AI/company_chatbot/__pycache__/
+Generative AI/company_chatbot/chroma_db/
+
+# OS files
+.DS_Store
+Thumbs.db

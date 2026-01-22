@@ -1,0 +1,10 @@
+langchain
+langchain-google-genai
+langchain-community
+langchain-huggingface
+langchain-text-splitters
+sentence-transformers
+chromadb
+gradio
+pypdf
+python-dotenv

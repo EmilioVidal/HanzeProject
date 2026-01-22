@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Vector database
+vectordb/
+chroma_db/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
