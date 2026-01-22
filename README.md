@@ -1,5 +1,19 @@
 # HanzeProject
-This repository contains the code and exercises from the topics I’ve studied while learning Python and Artificial Intelligence.
-It serves as a place to organize and keep track of all the scripts, notebooks, and small projects I’ve worked on.
 
-Each folder corresponds to a specific topic or concept explored during my learning process.
+This repository contains my learning journey in Python and Artificial Intelligence. Here are the three main projects:
+
+## ComputerVision
+Learn how to work with images and videos using OpenCV. Includes topics like:
+- Image manipulation and enhancement
+- Face and object detection
+- Video recording and tracking
+- Object size measurement tool
+
+## Generative AI
+Build an intelligent company chatbot that can answer questions using AI and natural language processing.
+
+## NLP (Natural Language Processing)
+Explore text analysis and language understanding through various notebooks, including:
+- Text processing techniques
+- Sentiment analysis (like movie reviews)
+- Applied NLP projects
